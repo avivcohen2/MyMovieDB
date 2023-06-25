@@ -96,36 +96,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     };
 
 
-//    private Filter searchedMovies = new Filter() {
-//        @Override
-//        protected FilterResults performFiltering(CharSequence constraint) {
-//            List<Movie> filteredList = new ArrayList<>();
-//            if (constraint == null || constraint.length() == 0) {
-//                filteredList.addAll(moviesList);
-//            }
-//            else {
-//                String filterPattern = constraint.toString().toLowerCase().trim();
-//                for (Movie movie: moviesList) {
-//                    if (movie.title.toLowerCase().contains(filterPattern)) {
-//                        filteredList.add(movie);
-//                    }
-//                }
-//                filteredMoviesList = filteredList;
-//            }
-//            FilterResults results = new FilterResults();
-//            results.values = filteredList;
-//            return results;
-//        }
-//
-//        @Override
-//        protected void publishResults(CharSequence constraint, FilterResults results) {
-//                filteredMoviesList.clear();
-//                filteredMoviesList.addAll((List) results.values);
-//                notifyDataSetChanged();
-//        }
-//    };
-
-
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView movieName;
