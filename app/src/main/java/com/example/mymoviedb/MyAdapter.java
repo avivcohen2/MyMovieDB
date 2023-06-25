@@ -73,7 +73,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
                 filteredList.addAll(moviesList);
             }
             else {
-//                filteredMoviesList =
                 String filterPattern = constraint.toString().toLowerCase().trim();
                 for (Movie movie: moviesList) {
                     if (movie.title.toLowerCase().contains(filterPattern)) {
